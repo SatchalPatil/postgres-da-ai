@@ -1,0 +1,33 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.pkl
+*.db
+*.log
+
+# Virtual Environment
+.venv/
+env/
+.venv.bak/
+*.egg-info/
+
+# Poetry related files
+poetry.lock
+
+# Environment Variables
+.env
+.env.local
+*.key
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# PostgreSQL related files
+*.sql
+*.dump
+*.pgdata

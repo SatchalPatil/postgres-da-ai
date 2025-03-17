@@ -1,0 +1,29 @@
+[project]
+name = "postgres-da-ai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "SatchalPatil",email = "satchalpatil04@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai (>=1.66.3,<2.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "argparse (>=1.4.0,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "postgres_da_ai_agent" }
+]
+
+[tool.poetry.scripts]
+start = "postgres_da_ai_agent.main:main"
