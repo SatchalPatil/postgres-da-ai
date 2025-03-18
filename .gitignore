@@ -1,33 +1,50 @@
-# Python-related files
-__pycache__/
-*.py[cod]
-*.sqlite3
-*.pkl
-*.db
-*.log
+.aider.ident.cache.v1
+.aider.tags.cache.v1
+.aider.chat.history.md
+.aider.input.history
 
-# Virtual Environment
-.venv/
-env/
-.venv.bak/
-*.egg-info/
+agent_results/
 
-# Poetry related files
-poetry.lock
-
-# Environment Variables
 .env
-.env.local
-*.key
 
-# Jupyter Notebook Checkpoints
-.ipynb_checkpoints/
+*.pyc
 
-# VS Code settings
-.vscode/
-*.code-workspace
+# Packages
+*.egg
+!/tests/**/*.egg
+/*.egg-info
+/dist/*
+build
+_build
+.cache
+*.so
 
-# PostgreSQL related files
-*.sql
-*.dump
-*.pgdata
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache
+
+.DS_Store
+.idea/*
+.python-version
+.vscode/*
+
+/test.py
+/test_*.*
+
+/setup.cfg
+MANIFEST.in
+/setup.py
+/docs/site/*
+/tests/fixtures/simple_project/setup.py
+/tests/fixtures/project_with_extras/setup.py
+.mypy_cache
+
+.venv
+/releases/*
+pip-wheel-metadata
+/poetry.toml
+
+poetry/core/*
