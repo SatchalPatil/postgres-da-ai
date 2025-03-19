@@ -5,7 +5,7 @@ Purpose:
 """
 
 from typing import Any, Dict
-from ollama import generate  # Assumes an Ollama Python client is available
+from ollama import generate  
 
 def prompt(user_prompt: str) -> str:
     response = generate(model="llama3.1:8b", prompt=user_prompt)
